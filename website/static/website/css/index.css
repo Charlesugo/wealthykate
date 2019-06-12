@@ -1,0 +1,198 @@
+body {
+  color: #777777;
+  font-family: monospace, calibri;
+  font-size: 18px;
+  font-weight: 400;
+}
+a {
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+a, a:focus, a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+.gradient{
+  background-image: -webkit-linear-gradient(0deg, #1e222a 0%, #09090c 100%);
+	/*background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #2f3575 100%);*/
+}
+@media (max-width: 800px) {
+  .carousel-items-right {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .carousel-items-right img {
+    width: 70%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .carousel-items-left {
+    text-align: center;
+  }
+}
+
+.carousel-items-left h1 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 1em;
+  /*margin-bottom: 40px;*/
+}
+
+.carousel-items-left h1 span {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .carousel-items-left h1 {
+    font-size: 39px;
+    margin-top: 75px;
+  }
+}
+.excellency {
+    margin-left: 70px !important;
+  }
+
+@media (max-width: 1199px) {
+  .carousel-items-left h1 {
+    font-size: 36px;
+  }
+  .excellency {
+    font-size: 30px;
+    margin-left: 100px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .carousel-items-left h1 {
+    font-size: 30px;
+  }
+  .excellency {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-items-left {
+    padding-bottom: 40px;
+  }
+}
+
+.drpdown-btn{
+  background-color: pink;
+}
+.drpdown-btn:hover{
+  background-color: #fdb6c2;
+}
+.harriet{
+  color: #673AB7;
+  font-weight: 800;
+  /* margin-left: 140px !important; */
+}
+
+.ambassador{
+  color: black;
+  fomt-size: homestead;
+}
+.about-jumbo{
+  background-color: white;
+  color: #000;
+  font-size: 20px;
+  font-family: verdana;
+}
+.look_at_my_services{
+  background-image: -webkit-linear-gradient(0deg, #3F51B5 0%, #2196F3 100%);
+}
+
+.look_at_my_services:hover{
+  background-image: -webkit-linear-gradient(0deg, #2196F3 0%, #3F51B5 100%);
+}
+
+.jumbotron_book{
+  border-radius: 0px;
+  background-image: -webkit-linear-gradient(0deg, #2196F3 0%, #3F51B5 100%);
+}
+
+
+/* Footer */
+#myFooter {
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .btn {
+  color: white;
+  background-color: #d84b6b;
+  border-radius: 20px;
+  border: none;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  #myFooter {
+    text-align: center;
+  }
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+#logo{
+  background-image: url(wealthykate_logo2.png);
+}
+
+/*atevincentihie@gmail.com*/

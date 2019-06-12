@@ -1,0 +1,6 @@
+django>=2.1.2
+gunicorn>=19.9.0
+requests
+psycopg2-binary>=2.7.7
+
+
