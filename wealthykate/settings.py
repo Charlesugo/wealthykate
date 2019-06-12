@@ -25,7 +25,7 @@ SECRET_KEY = 'za9_p_x6+oig)4zn+u@k#*&gsjn_1e56b5$pgkb&jrs3=e%8aa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wealthykate.com', 'www.wealthykate.com', '157.230.91.210']
+ALLOWED_HOSTS = ['wealthykate.com', 'www.wealthykate.com', '167.99.231.213']
 
 
 # Application definition
