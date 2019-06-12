@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'wealthykate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wealthykate',
+        'NAME': 'wealthykate_db',
         'USER': 'ugo_db_user',
         'PASSWORD': 'mynumber',
         'HOST': 'localhost',
