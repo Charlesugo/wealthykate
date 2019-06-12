@@ -25,7 +25,7 @@ SECRET_KEY = 'za9_p_x6+oig)4zn+u@k#*&gsjn_1e56b5$pgkb&jrs3=e%8aa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wealthykate.com', 'www.wealthykate.com', '157.230.91.210']
 
 
 # Application definition
@@ -75,10 +75,21 @@ WSGI_APPLICATION = 'wealthykate.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+    # 'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'wealthykate',
+        'USER': 'ugo_db_user',
+        'PASSWORD': 'mynumber',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
