@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="{% static 'website/css/index.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/mCustomScrollbar.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/animate-1.css' %}">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -28,7 +30,7 @@
             </div>
 
             <div class="sidebar-header">
-                <h3>Wealthy Kate</h3>
+                <h4>WealthyKate</h4>
             </div>
 
             <ul class="list-unstyled components">
@@ -83,7 +85,7 @@
             <nav class="navbar navbar-expand-md navbar-light fixed-top">
                 <div class="container-fluid">
                 	<button type="button" id="sidebarCollapse" class="btn btn-info toggle_sidebar">
-                        <i class="fas fa-align-left" style="font-size: 16px;"></i>
+                        <i class="fas fa-align-justify" style="font-size: 16px;"></i>
                         <!-- <span>Toggle Sidebar</span> -->
                     </button>
 					<a class="navbar-brand" href="#">
@@ -109,14 +111,14 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="https://newtrends247.com/">
                                 	<i class="fa fa-newspaper"></i> Blog
                                 </a>
                             </li>
                             <li class="nav-item">
                             	<div class="dropdown">
 									<button class="btn dropdown-toggle drpdown-btn" type="button" id="dropdownBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Others <span style="color: transparent;">Affi Websites</span>
+										Organizations <span style="color: transparent;"> Web</span>
 									</button>
 									<div class="dropdown-menu" aria-labelledby="dropdownBtn">
 										<a class="dropdown-item" href="#">Theoginia Nig ltd</a>
@@ -133,20 +135,22 @@
                 </div>
             </nav>
             {% block body %}
-            <div class="gradien" style="background-color: #b7a8ab;">
+            <div class="gradient" stle="background-color: #b7a8ab;">
                 <div class="container">
                     <br>
                     <div class="row justify-content-start align-items-center">
                         <div class="col-lg-6 col-md-6 carousel-items-right">
-                            <img class="img-fluid" src="{% static 'website/img/wealthykate1.jpeg' %}" alt="Ambassador Kate Igbodike">
+                            <img class="img-fluid" src="{% static 'website/img/wealthykate1.png' %}" alt="Ambassador Kate Igbodike">
                         </div>                      
                         <div class="col col-lg-6 col-md-6 carousel-items-left">
                             <h1 class="text-white">
-                            	<span class="ambassador">AMB. KATE IGBODIKE </span> <br>
-                                <b class="excellency">WealthyKate<br></b>
-                              
+                            	<span class="ambassador">
+                                    AMB. KATE IGBODIKE<br> 
+                                    <span style="color: gold;">WealthyKate</span>
+                                </span> <br>
+                                
                             </h1>
-                            <p class="mx-auto text-white  mt-20 mb-40">
+                            <p class="mx-auto text-white mt-20 mb-40" syle="#607d8b">
                                 Every great dream begins with a dreamer. Always remeber, you have within you the strength, the patience and the passion to reach for the stars to change the world.<br> <span class="harriet"> -Harriet Tubman.</span>
                             </p>
                             
@@ -232,13 +236,14 @@
 					<br><br>
 					<div class="row">
 						<div class="col-12 col-sm-6">
-							<p class="lead text-white">
+							<p class="lead text-white text-center">
 								Ambassador Kate Okoroji-Igbodike widely known as Wealthykate is the author of the Book: SMART THINKING, SMART IDEAS, WEALTHY PEOPLE.
 
-								She is a retired Public Servant of the Federal Republic of Nigeria and a retired Foreign Service Officer.
+								She is a retired Public Servant of the Federal Republic of Nigeria and a retired Foreign Service Officer.<br>
 								She worked and retired from the Nigerian Ministry of Foreign Affairs after the mandatory 35 years of service.
-								She served as a Foreign Service Officer (diplomat) in many Nigerian Missions abroad, including New York in The United States of America and London in The United Kingdom.
+								She served as a Foreign Service Officer (diplomat) in many Nigerian Missions abroad, including New York in The United States of America and London in The United Kingdom.<br>
 								She holds a Masters Degree in Diplomatic Studies from the Diplomatic Academy of Westminster University, UK London.<br><br>
+                                <a href="{% url 'website:about' %}" class="btn btn-warning">SEE MORE</a>
 							</p>
 							
 							<div class="progress" style="height: 22px;">
@@ -259,9 +264,9 @@
 									<h3 class="card-title">Wealthy Kate</h3>
 									<p class="card-text">
 										<i class="fa fa-envelope"></i> wealthykate@gmail.com
-										<br> (+234) 800000000 <i class="fa fa-phone"></i>
+								
 									</p>
-									<a href="{% url 'website:about' %}" class="btn btn-outline-secondary">SEE MORE</a>
+								
 								</div>
 							</div>
 						</div>
@@ -273,14 +278,30 @@
 			<div class="container-fluid" style="background-color: #f2f2f2; padding: 15px;">
 				<h2 class="text-center">My Qualifications</h1><br>
 				<div class="row">
-					<div class="col-12 col-md-6">
-						<p class="lead text-center">
+					<div class="col-12 col-md-12">
+						<p class="lead text-center text-dark">
+                            <b>UNIVERSITY OF WESTMINSTER, UK LONDON</b><br>
+                         
+                            Masters in Diplomatic Studies<br>
+                        </p><hr>
+						
+						<!-- <p class="lead text-center text-dark">
+							CODEPIXAR<br>
+							May 2013 to Present<br>
+
+							UI/UX Designer<br>
+							All users on MySpace will know that there are millions of 
+							people out there. Every day besides.
+						</p> -->
+					</div>
+					<!-- <div class="col-12 col-md-6">
+						<p class="lead text-center text-dark">
 							Masters in Graphics & Fine Arts<br>
 							Session: 2010-11<br>
 							Result: 3.78 (In the Scale of 4.00)
 						</p><hr>
 						
-						<p class="lead text-center">
+						<p class="lead text-center text-dark">
 							CODEPIXAR<br>
 							May 2013 to Present<br>
 
@@ -288,38 +309,22 @@
 							All users on MySpace will know that there are millions of 
 							people out there. Every day besides.
 						</p>
-					</div>
-					<div class="col-12 col-md-6">
-						<p class="lead text-center">
-							Masters in Graphics & Fine Arts<br>
-							Session: 2010-11<br>
-							Result: 3.78 (In the Scale of 4.00)
-						</p><hr>
-						
-						<p class="lead text-center">
-							CODEPIXAR<br>
-							May 2013 to Present<br>
-
-							UI/UX Designer<br>
-							All users on MySpace will know that there are millions of 
-							people out there. Every day besides.
-						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<br><br><br>
 			<div class="container-fluid">
 				<h1 class="text-center">Latest Books</h1>
 				<div class="row">
-					<div class="col-12 col-md-4">
-						<img src="{% static 'website/img/wealthykate2.jpeg' %}" class="img-fluid">
+					<div class="col-12 col-md-3">
+						<!-- <img src="{% static 'website/img/book_cover.jpg' %}" class="img-fluid"> -->
 					</div>
-					<div class="col-12 col-md-4">
-						<img src="{% static 'website/img/wealthykate2.jpeg' %}" class="img-fluid">
+					<div class="col-12 col-md-6 text-center animated fadeInRight">
+						<img src="{% static 'website/img/book_cover.png' %}" class="img-fluid">
 					</div>
-					<div class="col-12 col-md-4">
-						<img src="{% static 'website/img/wealthykate2.jpeg' %}" class="img-fluid">
-					</div>
+                    <div class="col-12 col-md-3">
+                        <!-- <img src="{% static 'website/img/book_cover.jpg' %}" class="img-fluid"> -->
+                    </div>
 				</div>
 			</div>
 
@@ -341,8 +346,7 @@
                 <div class="col-md-3">
                     <h5>Support</h5>
                     <ul>
-                      <li><a>(+234)80000000</a></li>
-                      <li><a>info@wealthykate.com</a></li>
+                      <li><a>wealthykate@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
@@ -354,11 +358,11 @@
                 </div>
                 <div class="col-md-3">
                   <div class="text-center center-block">
-                    <a href="#" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="#" target="_blank"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
 
-                    <a href="#" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="#" target="_blank"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
 
-                    <a href="#" target="_blank"><i id="social-gp" class="fa fa-pinterest fa-3x social"></i></a>
+                    <a href="#" target="_blank"><i id="social-gp" class="fab fa-instagram fa-3x social"></i></a>
 
                     <a href="mailto:wealthykate@gmail.com" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
                   </div>
@@ -381,7 +385,7 @@
     <script src="{% static 'website/js/popper.js' %}"></script>
     <script src="{% static 'website/js/bootstrap.js' %}"></script>
     <script src="{% static 'website/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-
+    <script src="{% static 'website/js/jquery.scrollAnimation.js' %}"></script>
 
     
     <!-- jQuery Custom Scroller CDN -->
