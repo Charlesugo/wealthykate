@@ -16,6 +16,7 @@ a, a:focus, a:hover {
 .gradient{
   /*background-image: -webkit-linear-gradient(0deg, #1e222a 0%, #09090c 100%);*/
 	background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #2f3575 100%);
+  
 }
 @media (max-width: 800px) {
   .carousel-items-right {
